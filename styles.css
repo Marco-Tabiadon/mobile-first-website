@@ -138,7 +138,7 @@ body {
   position: relative; /* fix for ScrollDown not staying in place*/
 }
 
-h1 {
+.container h1 {
   text-align: center;
   font-size: 6em;
 }
@@ -364,18 +364,21 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
   }
 
-  .scrollDown {
-    width: 30%;
-    font-size: 1.3em;
-    position: absolute;
-    bottom: 8%;
-    left: 0;
-    right: 0;
-    margin: 0;
-    text-align: center;
 
+
+  button {
+    height: 2em;
+    width: 5em;
+    display: block;
+    background-color: grey;
+    border: none;
+    color: white;
+    margin: 47px auto;
+    font-size: 2em;
   }
 
 
